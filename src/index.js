@@ -1,3 +1,3 @@
 import "./style.scss"
-import "./scripts/touch"
+import "./scripts/api"
 

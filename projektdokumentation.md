@@ -1,8 +1,8 @@
 # Projektdokumentation
 
-#### Navn:
+#### Navn: Silje Agø Paldrup
 
-##### Hold: 1146521c105 / WU05
+##### Hold: WU10
 
 ##### Uddannelse: Webudvikler
 
@@ -16,8 +16,8 @@
 -   HTML
 -   CSS
 -   JavaScript
--   Gulp
--   ...
+-   Webpack
+-   SASS
 
 ---
 
