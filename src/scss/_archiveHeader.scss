@@ -1,0 +1,23 @@
+@use "variables" as var;
+
+
+.archiveHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0 1.5em 0;
+    border-bottom: 2px solid var.$secondary-color-light;
+
+    &__title {
+        font-family: var.$main-font;
+        color: var.$primary-color-dark;
+        font-size: 20px;
+    }
+
+}
+
+.fa-gear,
+.fa-bookmark {
+    color: var.$primary-color-dark;
+    font-size: 20px;
+}

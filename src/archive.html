@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,62 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/2946442f60.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+
+<body class="newsbox">
+    <header class="archiveHeader">
+        <a href="./index.html"><i class="settingsHeader__icon fa-solid fa-chevron-left"></i></a>
+        <h1 class="archiveHeader__title">Archive</h1>
+        <a href="./settings.html"><i class="fa-solid fa-gear"></i></a>
+    </header>
+    <main>
+        <section class="newsboxSearch">
+            <form action="" class="newsboxSearch__form">
+                <input class="newsboxSearch__input" type="search" placeholder="Search news">
+                <button class="newsboxSearch__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </section>
+
+        <article class="categories">
+            <section class="europe">
+                <section class="europeHeader">
+                    <div class="europeHeader__iconContainer"><i class="fa-solid fa-earth-europe europeHeader__icon"></i>
+                    </div>
+                    <h2 class="europeHeader__title">Europe</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="health">
+                <section class="healthHeader">
+                    <div class="healthHeader__iconContainer"><i class="fa-solid fa-staff-snake healthHeader__icon"></i>
+                    </div>
+                    <h2 class="healthHeader__title">Health</h2><i class="fa-solid fa-chevron-right"></i>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                </section>
+            </section>
+            <section class="sport">
+                <section class="sportHeader">
+                    <div class="sportHeader__iconContainer"><i class="fa-solid fa-basketball sportHeader__icon"></i>
+                    </div>
+                    <h2 class="sportHeader__title">Sport</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="business">
+                <section class="businessHeader">
+                    <div class="businessHeader__iconContainer"><i class="fa-solid fa-briefcase businessHeader__icon"></i>
+                    </div>
+                    <h2 class="businessHeader__title">Business</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="travel">
+                <section class="travelHeader">
+                    <div class="travelHeader__iconContainer"><i class="fa-solid fa-route travelHeader__icon"></i></div>
+                    <h2 class="travelHeader__title">Travel</h2><i class="fa-solid fa-chevron-right "></i>
+                </section>
+            </section>
+        </article>
+
+
+    </main>
+
 </body>
+
 </html>
