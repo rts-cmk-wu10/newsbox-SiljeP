@@ -1,0 +1,10 @@
+@use "variables" as var;
+
+.test{
+    font-family: var.$main-font;
+    font-weight: 900;
+}
+
+h2{
+    font-family: var.$secondary-font;
+}
