@@ -11,22 +11,57 @@
 
 <body class="newsbox">
     <header class="newsboxHeader">
-        <i class="fa-solid fa-bookmark"></i>
+        <a href="./archive.html"><i class="fa-solid fa-bookmark"></i></a>
         <h1 class="newsboxHeader__title">Newsbox</h1>
-        <i class="fa-solid fa-gear"></i>
+        <a href="./settings.html"><i class="fa-solid fa-gear"></i></a>
     </header>
     <main>
         <section class="newsboxSearch">
-            <form action="" class="newsboxSearch__form"> 
-                <input class="newsboxSearch__input" type="search"
-                    placeholder="Search news">
-                    <button class="newsboxSearch__button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-
-
-
-
+            <form action="" class="newsboxSearch__form">
+                <input class="newsboxSearch__input" type="search" placeholder="Search news">
+                <button class="newsboxSearch__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </section>
+
+        <article class="categories">
+            <section class="europe">
+                <section class="europeHeader">
+                    <div class="europeHeader__iconContainer"><i class="fa-solid fa-earth-europe europeHeader__icon"></i>
+                    </div>
+                    <h2 class="europeHeader__title">Europe</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="health">
+                <section class="healthHeader">
+                    <div class="healthHeader__iconContainer"><i class="fa-solid fa-staff-snake healthHeader__icon"></i>
+                    </div>
+                    <h2 class="healthHeader__title">Health</h2><i class="fa-solid fa-chevron-right"></i>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                </section>
+            </section>
+            <section class="sport">
+                <section class="sportHeader">
+                    <div class="sportHeader__iconContainer"><i class="fa-solid fa-basketball sportHeader__icon"></i>
+                    </div>
+                    <h2 class="sportHeader__title">Sport</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="business">
+                <section class="businessHeader">
+                    <div class="businessHeader__iconContainer"><i class="fa-solid fa-briefcase businessHeader__icon"></i>
+                    </div>
+                    <h2 class="businessHeader__title">Business</h2><i class="fa-solid fa-chevron-right"></i>
+                </section>
+            </section>
+            <section class="travel">
+                <section class="travelHeader">
+                    <div class="travelHeader__iconContainer"><i class="fa-solid fa-route travelHeader__icon"></i></div>
+                    <h2 class="travelHeader__title">Travel</h2><i class="fa-solid fa-chevron-right "></i>
+                </section>
+            </section>
+        </article>
+
+
     </main>
 
 </body>
