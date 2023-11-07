@@ -2,6 +2,7 @@
 
 .settingsCategories {
     background-color: #E0E5E5;
+    
    
 
     &__title {
@@ -31,6 +32,9 @@
     }
 
     &__subject{
+        display: flex;
+        align-items: center;
+        margin-right: 1.3em;
         border-bottom: 1px solid var.$secondary-color-light;
 
         &:last-of-type{
