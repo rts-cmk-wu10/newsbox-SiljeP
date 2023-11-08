@@ -1,0 +1,60 @@
+@use "variables" as var;
+
+.health__article {
+    display: flex;
+    border-bottom: 2px solid var.$secondary-color-light;
+    height: max-content;
+
+
+    &Image {
+        width: 100px;
+        height: 100px;
+        padding: .5em;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+
+    &TextContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Title {
+        font-size: 18px;
+        font-family: var.$main-font;
+        font-weight: 500;
+        color: var.$primary-color-dark;
+    }
+
+    &Text {
+        font-size: 16px;
+        font-family: var.$main-font;
+        font-weight: 100;
+        color: var.$primary-color-dark;
+    }
+
+    &LinkContainer{
+        display:inline;
+        margin: auto;
+       
+    
+       
+    }
+
+    &Link{
+        display: block;
+         margin: auto;
+        text-decoration: none;
+        padding: .5em .5em;
+        border-radius: 10px;
+        font-family: var.$secondary-font;
+        font-size: 18px;
+        background-color: #E0E5E5;
+        border: 1px solid #D1D8DA;
+        color: #64747F;
+        cursor: pointer;
+        
+    }
+
+}
