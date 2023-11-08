@@ -35,16 +35,14 @@
     }
 
     &LinkContainer{
-        display:inline;
-        margin: auto;
-       
+        display:block;
+        margin: 1em 0;
     
-       
     }
 
     &Link{
         display: block;
-         margin: auto;
+        width: fit-content;
         text-decoration: none;
         padding: .5em .5em;
         border-radius: 10px;
