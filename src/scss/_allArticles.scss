@@ -1,6 +1,6 @@
 @use "variables" as var;
 
-.health__article, .world__article, .science__article {
+.health__article, .world__article, .science__article, .business__article, .travel__article {
     display: flex;
     border-bottom: 2px solid var.$secondary-color-light;
     height: max-content;

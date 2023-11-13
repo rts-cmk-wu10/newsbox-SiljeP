@@ -4,19 +4,15 @@ export default (function () {
     const HEALTH = document.querySelector(".health")
 
     //arrow to the right (headline) changes shape when you click it
-    const CATEGORY_DISPLAY_ICON = document.querySelectorAll(".categories__displayIcon")
+    const CATEGORY_DISPLAY_ICON = HEALTH.querySelector(".healthHeader__displayIcon")
 
-    CATEGORY_DISPLAY_ICON.forEach(e => {
-     e.addEventListener("click", iconClick)
-    })
+    CATEGORY_DISPLAY_ICON.addEventListener("click", iconClick)
 
     function iconClick(e) {
-        //  e.target.classList.remove("fa-chevron-right")
         e.target.classList.toggle("fa-chevron-right")
         e.target.classList.toggle("fa-chevron-down")
-    }
 
-    fetch(`https://api.nytimes.com/svc/topstories/v2/health.json?api-key=${KEY}`)
+        fetch(`https://api.nytimes.com/svc/topstories/v2/health.json?api-key=${KEY}`)
         .then(function (response) {
             if (response.status !== 200)
                 throw new Error("error message")
@@ -51,5 +47,8 @@ export default (function () {
             // window.location.href = "/ups.html" SHOULD I MAKE AN ERROR SITE
         })
 
+    }
+
+    
 })()
 

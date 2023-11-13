@@ -3,6 +3,15 @@
      const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"
      const WORLD = document.querySelector(".world")
 
+     const CATEGORY_DISPLAY_ICON = WORLD.querySelector(".worldHeader__displayIcon")
+
+     CATEGORY_DISPLAY_ICON.addEventListener("click", iconClick)
+ 
+     function iconClick(e) {
+         e.target.classList.toggle("fa-chevron-right")
+         e.target.classList.toggle("fa-chevron-down")
+
+
      fetch(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=${KEY}`)
          .then(function (response) {
              if (response.status !== 200)
@@ -33,4 +42,5 @@
                  .catch(function (error) {
                      console.log(error)
                  })
+                }
          })()
