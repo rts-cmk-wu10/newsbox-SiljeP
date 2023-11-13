@@ -1,6 +1,6 @@
 @use "variables" as var;
 
-.health__article {
+.health__article, .world__article, .science__article {
     display: flex;
     border-bottom: 2px solid var.$secondary-color-light;
     height: max-content;
@@ -32,27 +32,6 @@
         font-family: var.$main-font;
         font-weight: 100;
         color: var.$primary-color-dark;
-    }
-
-    &LinkContainer{
-        display:block;
-        margin: 1em 0;
-    
-    }
-
-    &Link{
-        display: block;
-        width: fit-content;
-        text-decoration: none;
-        padding: .5em .5em;
-        border-radius: 10px;
-        font-family: var.$secondary-font;
-        font-size: 18px;
-        background-color: #E0E5E5;
-        border: 1px solid #D1D8DA;
-        color: #64747F;
-        cursor: pointer;
-        
     }
 
 }
