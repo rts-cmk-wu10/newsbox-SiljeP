@@ -38,7 +38,7 @@ export default (function () {
                        <div class="world__articleTextContainer">
                       <h1 class="world__articleTitle">${object.title}</h1>
                        <p class="world__articleText">${object.abstract}</p>
-                      </div><div class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></div>`
+                      </div><button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>`
 
                             WORLD_CONTAINER.append(ARTICLE)
                         }

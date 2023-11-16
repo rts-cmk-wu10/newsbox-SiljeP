@@ -10,7 +10,6 @@
     height: max-content;
     width: 100%;
     // overflow-x: hidden;
-    position: relative;
 
 
     &Image {
@@ -20,6 +19,7 @@
         border-radius: 50%;
         object-fit: cover;
 
+
     }
 
     &TextContainer {
@@ -28,7 +28,7 @@
         flex-direction: column;
         padding-right: 2em;
         justify-content: center;
-
+      
     }
 
     &Title {
@@ -47,6 +47,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        
     }
 
 }
@@ -57,11 +58,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 100px;
+    max-width: 100px;
+    border: none;
+
+
     // position: relative;
 
     // left: 0;
-
 
 
     &__icon {

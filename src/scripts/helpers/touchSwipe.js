@@ -11,7 +11,7 @@ export function touchHandler(event) {
         let direction
         if (x - 50 > event.changedTouches[0].clientX) {
             direction = "Left"
-            event.currentTarget.style.transform = "translate(-100px,0px)"
+            event.currentTarget.style.transform = "translate(-135px,0px)"
         } else if (x + 50 < event.changedTouches[0].clientX)  {
             direction = "Right"
             event.currentTarget.style.transform = "translate(0px,0px)"
