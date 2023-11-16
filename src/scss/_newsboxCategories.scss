@@ -1,7 +1,11 @@
 @use "variables" as var;
 
+
+
+
 .categories {
     width: 100%;
+    overflow-x: hidden;
 
     .worldHeader,
     .travelHeader,

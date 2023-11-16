@@ -1,9 +1,16 @@
 @use "variables" as var;
 
-.health__article, .world__article, .science__article, .business__article, .travel__article {
+.health__article,
+.world__article,
+.science__article,
+.business__article,
+.travel__article {
     display: flex;
     border-bottom: 2px solid var.$secondary-color-light;
     height: max-content;
+    width: 100%;
+    // overflow-x: hidden;
+    position: relative;
 
 
     &Image {
@@ -17,7 +24,11 @@
 
     &TextContainer {
         display: flex;
+        width: 350px;
         flex-direction: column;
+        padding-right: 2em;
+        justify-content: center;
+
     }
 
     &Title {
@@ -32,6 +43,30 @@
         font-family: var.$main-font;
         font-weight: 100;
         color: var.$primary-color-dark;
+        padding-bottom: .5em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
+}
+
+.archiveButton {
+    // overflow-x: hidden;
+    background-color: var.$primary-color-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // position: relative;
+
+    // left: 0;
+
+
+
+    &__icon {
+        color: white;
+        font-size: xx-large;
+
+    }
 }

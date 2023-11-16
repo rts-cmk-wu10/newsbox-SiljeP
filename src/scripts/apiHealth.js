@@ -45,6 +45,11 @@ export default (function () {
                     // window.location.href = "/ups.html" SHOULD I MAKE AN ERROR SITE
                 })
 
+        } else if (CATEGORY_DISPLAY_ICON.classList.contains("fa-chevron-down") && HEALTH_CONTAINER.hasChildNodes()) {
+            const H_ARTICLE = document.querySelectorAll(".health__article")
+            H_ARTICLE.forEach(element => {
+                element.style.display = "flex"
+            })
         } else {
             const H_ARTICLE = document.querySelectorAll(".health__article")
             H_ARTICLE.forEach(element => {
