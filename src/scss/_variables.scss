@@ -19,4 +19,14 @@ $secondary-color-dark: #B9B0A2;
 //Fonts
 $main-font: "europa", sans-serif;
 $secondary-font: "rift-soft", sans-serif;
-                                                
+
+
+body{
+    --background-color: #{$font-color-light};
+    --border-bottom: #{$secondary-color-light};
+    
+}
+
+body.darkmode{
+    --background-color: #{$primary-color-dark};
+}

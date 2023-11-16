@@ -1,4 +1,7 @@
+import { touchHandler } from "./helpers/touchSwipe"
+
 export default (function () {
+    if (!window.location.pathname.includes("index.html") || !window.location.pathname.includes("archive.html")) return // guard clause
 
     const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"
     const SCIENCE_CONTAINER = document.querySelector(".science__articleContainer")
@@ -27,13 +30,15 @@ export default (function () {
                             if (SCIENCE_CONTAINER.childElementCount > 5) return
 
                             const ARTICLE = document.createElement("article")
+                            ARTICLE.addEventListener("touchstart", touchHandler)
+                            ARTICLE.addEventListener("touchend", touchHandler)
 
                             ARTICLE.classList.add("science__article")
                             ARTICLE.innerHTML = `<img class="science__articleImage" src="${object.multimedia[2].url}">
                       <div class="science__articleTextContainer">
                      <h1 class="science__articleTitle">${object.title}</h1>
                       <p class="science__articleText">${object.abstract}</p>
-                     </div>`
+                     </div><button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>`
 
                             SCIENCE_CONTAINER.append(ARTICLE)
                         }
