@@ -2,7 +2,7 @@ import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
     console.log(window.location.pathname);
-    if (!window.location.pathname.includes("index.html") || !window.location.pathname.includes("archive.html")) return // guard clause
+    if (!window.location.pathname.includes("index.html") && !window.location.pathname.includes("archive.html")) return // guard clause
 
 
     const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"

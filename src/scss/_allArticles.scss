@@ -5,8 +5,9 @@
 .science__article,
 .business__article,
 .travel__article {
+    background-color: var(--background-color);
     display: flex;
-    border-bottom: 2px solid var.$secondary-color-light;
+    border-bottom: 2px solid var(--border-bottom);
     height: max-content;
     width: 100%;
     // overflow-x: hidden;
@@ -35,14 +36,14 @@
         font-size: 18px;
         font-family: var.$main-font;
         font-weight: 500;
-        color: var.$primary-color-dark;
+        color: var(--font-color);
     }
 
     &Text {
         font-size: 16px;
         font-family: var.$main-font;
         font-weight: 100;
-        color: var.$primary-color-dark;
+        color: var(--font-color);
         padding-bottom: .5em;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -53,8 +54,7 @@
 }
 
 .archiveButton {
-    // overflow-x: hidden;
-    background-color: var.$primary-color-light;
+    background-color: var(--button-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,14 +62,8 @@
     max-width: 100px;
     border: none;
 
-
-    // position: relative;
-
-    // left: 0;
-
-
     &__icon {
-        color: white;
+        color: var(--button-icon);
         font-size: xx-large;
 
     }

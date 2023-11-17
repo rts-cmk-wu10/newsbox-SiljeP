@@ -3,6 +3,7 @@
 .newsbox {
     width:100%;
     margin: auto;
+    background-color: var(--background-color);
 
 }
 
@@ -11,11 +12,12 @@
     justify-content: space-around;
     align-items: center;
     padding: 1em 0 1.5em 0;
-    border-bottom: 2px solid var.$secondary-color-light;
+    border-bottom: 2px solid var(--border-bottom);
+    background-color: var(--background-color);
 
     &__title {
         font-family: var.$main-font;
-        color: var.$primary-color-dark;
+        color: var(--font-color);
         font-size: 20px;
     }
 
@@ -23,6 +25,6 @@
 
 .fa-gear,
 .fa-bookmark {
-    color: var.$primary-color-dark;
+    color: var(--font-color);
     font-size: 20px;
 }

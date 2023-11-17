@@ -31,5 +31,5 @@
 }
 
 .switch__checkbox:checked + .switch {
-	background-color: var.$primary-color-light
+	background-color: var(--button-color);
 }

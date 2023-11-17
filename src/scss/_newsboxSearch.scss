@@ -5,7 +5,7 @@
     margin: auto;
     padding: 1em 0;
     width: 100%;
-    border-bottom: 2px solid var.$secondary-color-light;
+    border-bottom: 2px solid var(--border-bottom);
 
     &__form {
         display: flex;
@@ -15,7 +15,7 @@
     }
 
     &__input {
-        background-color: var.$secondary-color-light;
+        background-color: var(--light-background);
         border: 0px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -24,7 +24,7 @@
 
         &::placeholder {
             padding: 0 1em;
-            color: var.$secondary-color-medium;
+            color: var(--light-placeholder);
             font-family: var.$main-font;
             font-weight: 100;
             font-size: 16px;
@@ -35,12 +35,12 @@
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         border: none;
-        background-color: var.$secondary-color-light;
+        background-color:  var(--light-background);
         padding-right: 1.2em;
 
 
         .fa-magnifying-glass {
-            color: var.$secondary-color-medium;
+            color: var(--light-placeholder);
 
         }
     }

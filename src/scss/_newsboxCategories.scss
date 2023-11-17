@@ -6,7 +6,7 @@
 .categories {
     width: 100%;
     overflow-x: hidden;
-
+    background-color: var(--background-color);
     .worldHeader,
     .travelHeader,
     .businessHeader,
@@ -16,18 +16,19 @@
         align-items: center;
         width: 100%;
         padding: 1em 0;
-        border-bottom: 2px solid var.$secondary-color-light;
+        border-bottom: 2px solid var(--border-bottom);
+        background-color: var(--background-color);
 
         &__iconContainer {
             border-radius: 50%;
             padding: .2em;
-            background-color: white;
-            box-shadow: 0 2px 6px var.$secondary-color-medium;
+            background-color: var(--icon-container);
+            box-shadow: 0 2px 6px var(--icons-color-shadow);
             margin: 0 1em;
         }
 
         &__icon {
-            color: var.$primary-color-medium;
+            color: var(--header-icon-color);
 
             width: 20px;
             height: 20px;
@@ -39,7 +40,7 @@
         }
 
         &__title {
-            color: var.$primary-color-dark;
+            color: var(--font-color);
             font-family: var.$main-font;
             font-weight: bolder;
             font-size: 18px;
@@ -50,7 +51,7 @@
         &__displayIcon {
             text-align: end;
             padding: 0 1.5em;
-            color: var.$primary-color-dark;
+            color: var(--font-color);
         }
     }
 

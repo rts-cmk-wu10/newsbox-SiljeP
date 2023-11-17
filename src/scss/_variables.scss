@@ -21,12 +21,51 @@ $main-font: "europa", sans-serif;
 $secondary-font: "rift-soft", sans-serif;
 
 
-body{
+body {
     --background-color: #{$font-color-light};
     --border-bottom: #{$secondary-color-light};
+
+    --light-background: #{$secondary-color-light};
+    --light-placeholder: #{$secondary-color-medium};
+
+    --icons: #{$primary-color-dark};
+    --icon-container: #{$font-color-light};
+    --header-icon-color:#{$primary-color-medium};
+    --icons-color-shadow: #{$secondary-color-medium};
+
+
+    --font-color: #{$primary-color-dark};
+    --font-color-medium:#{$font-color-medium};
+    --font-color-grey: #{$secondary-color-dark};
+
+    --button-color: #{$primary-color-light};
+    --button-icon: #{$font-color-light};
+
+    --box-color: #{$font-color-light};
+
     
+
 }
 
-body.darkmode{
+body.darkmode {
     --background-color: #{$primary-color-dark};
+    --border-bottom: #{$primary-color-light};
+
+    --font-color: #{$font-color-light};
+    --font-color-medium:#{$font-color-light};
+    --font-color-grey: #{$primary-color-light};
+
+    --icons: #{$primary-color-light};
+    --header-icon-color:#{$primary-color-accent};
+    --icons-color-shadow: #{$font-color-dark};
+    --icon-container: #{$secondary-color-medium};
+
+    --light-background: #{$font-color-medium};
+    --light-placeholder: #{$primary-color-dark};
+
+     --button-color: #{$primary-color-light};
+     --button-icon: #{$font-color-light};
+
+    --box-color: #{$primary-color-dark};
+
 }

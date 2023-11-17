@@ -1,13 +1,13 @@
 @use "variables" as var;
 
 .settingsCategories {
-    background-color: #E0E5E5;
+    background-color: var(--light-background);
     
    
 
     &__title {
         font-family: var.$main-font;
-        color: var.$primary-color-light;
+        color: var(--font-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,14 +18,13 @@
 
     &__title--font {
         font-weight: 100;
-        color: #9B9E9E;
-        // color: var.$secondary-color-medium;
+        color: var(--font-color-grey);
         font-size: 18px;
 
     }
 
     &__box {
-        background-color: white;
+        background-color: var(--box-color);
         margin: auto;
         width: 90%;
         border-radius: 15px;
@@ -35,7 +34,7 @@
         display: flex;
         align-items: center;
         margin-right: 1.3em;
-        border-bottom: 1px solid var.$secondary-color-light;
+        border-bottom: 1px solid var(--border-bottom);
 
         &:last-of-type{
             border-bottom: none;
@@ -43,7 +42,7 @@
     }
 
     &__subjectTitle {
-        color: var.$primary-color-dark;
+        color: var(--font-color);
         font-family: var.$main-font;
         font-size: 18px;
         text-transform: uppercase;
@@ -52,21 +51,23 @@
     }
 
 
-    .darkmode {
+    .darkmode__container {
         display: flex;
         justify-content: center;
         margin: 3em 0;
 
-        &__button {
+        .darkmode__button {
             margin: auto;
             text-align: center;
             padding: .5em .5em;
             border-radius: 50px;
             font-family: var.$secondary-font;
-            font-size: 25px;
-            background-color: #E0E5E5;
-            border: 1px solid #D1D8DA;
-            color: #64747F;
+            font-size: 18px;
+            font-weight: 100;
+            text-transform: uppercase;
+            background-color: var(--light-background);
+            border: 1px dashed var(--light-placeholder);
+            color: var(--font-color-medium);
 
         }
 
@@ -80,7 +81,7 @@
             font-family: var.$main-font;
             font-weight: 100;
             font-size: 15px;
-            color: var.$font-color-medium;
+            color: var(--font-color-medium);
             padding-bottom: 3em;
         }
     }

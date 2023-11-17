@@ -4,12 +4,12 @@
     display: flex;
     align-items: center;
     padding: 1em 0 1.5em 0;
-    border-bottom: 2px solid var.$secondary-color-light;
+    border-bottom: 2px solid var(--border-bottom);
 
 
     &__title {
         font-family: var.$main-font;
-        color: var.$primary-color-dark;
+        color: var(--font-color);
         font-size: 20px;
         margin: auto;
     
@@ -20,7 +20,7 @@
         left: 1em;
         top: .2em;
         position: relative;
-        color: var.$primary-color-dark;
+        color:var(--font-color);
         font-size: 20px;
     }
 
