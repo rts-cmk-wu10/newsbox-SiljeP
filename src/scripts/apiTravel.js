@@ -36,12 +36,13 @@ export default (function () {
 
                             ARTICLE.classList.add("travel__article")
                             ARTICLE.innerHTML = `<img class="travel__articleImage" src="${object.multimedia[2].url}">
-                      <a class="health__articleURL" href="${object.url}" target="_blank"> 
+                      
                       <div class="travel__articleTextContainer">
+                      <a class="health__articleURL" href="${object.url}" target="_blank"> 
                      <h1 class="travel__articleTitle">${object.title}</h1>
                       <p class="travel__articleText">${object.abstract}</p>
-                     </div></a>
-                     <button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                     </a></div>
+                     <button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                      `
 
                             TRAVEL_CONTAINER.append(ARTICLE)

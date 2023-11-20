@@ -35,12 +35,13 @@ export default (function () {
 
                             ARTICLE.classList.add("science__article")
                             ARTICLE.innerHTML = `<img class="science__articleImage" src="${object.multimedia[2].url}">
-                       <a class="health__articleURL" href="${object.url}" target="_blank"> 
+                       
                        <div class="science__articleTextContainer">
+                       <a class="health__articleURL" href="${object.url}" target="_blank"> 
                      <h1 class="science__articleTitle">${object.title}</h1>
                       <p class="science__articleText">${object.abstract}</p>
-                     </div></a>
-                     <button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                     </a></div>
+                     <button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                     `
 
                             SCIENCE_CONTAINER.append(ARTICLE)
