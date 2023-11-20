@@ -35,10 +35,13 @@ export default (function () {
 
                             ARTICLE.classList.add("business__article")
                             ARTICLE.innerHTML = `<img class="business__articleImage" src="${object.multimedia[2].url}">
-                      <div class="business__articleTextContainer">
+                            <a class="health__articleURL" href="${object.url}" target="_blank"> 
+                            <div class="business__articleTextContainer">
                      <h1 class="business__articleTitle">${object.title}</h1>
                       <p class="business__articleText">${object.abstract}</p>
-                     </div><button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>`
+                     </div></a>
+                     <button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                    `
 
                             BUSINESS_CONTAINER.append(ARTICLE)
                         }

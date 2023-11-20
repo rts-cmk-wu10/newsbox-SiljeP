@@ -35,12 +35,15 @@ export default (function () {
 
                             ARTICLE.classList.add("health__article")
                             ARTICLE.innerHTML = `<img class="health__articleImage" src="${object.multimedia[2].url}">
-                     <div class="health__articleTextContainer">
+                            <a class="health__articleURL" href="${object.url}" target="_blank"> 
+                            <div class="health__articleTextContainer">
                      <h1 class="health__articleTitle">${object.title}</h1>
                      <p class="health__articleText">${object.abstract}</p>
-                   </div><button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>`
-
+                   </div></a><button class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                  `
+                            
                             HEALTH_CONTAINER.append(ARTICLE)
+                            console.log(object);
                         }
 
                     })

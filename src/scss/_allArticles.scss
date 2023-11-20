@@ -23,6 +23,10 @@
 
     }
 
+    &URL{
+        text-decoration: none;
+    }
+
     &TextContainer {
         display: flex;
         width: 350px;
