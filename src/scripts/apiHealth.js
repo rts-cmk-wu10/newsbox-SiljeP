@@ -1,8 +1,8 @@
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
-    if (!window.location.pathname.includes("index.html") && !window.location.pathname.includes("archive.html")) return // guard clause
-
+    if (!window.location.pathname.includes("index.html")) return // guard clause
+// && !window.location.pathname.includes("archive.html")
     const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"
     const HEALTH_CONTAINER = document.querySelector(".health__articleContainer")
 

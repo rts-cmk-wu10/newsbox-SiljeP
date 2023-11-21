@@ -7,4 +7,5 @@ import "./scripts/apiTravel"
 import "./scripts/darkmode"
 import "./scripts/settings"
 import "./scripts/newsboxCategories"
+import "./scripts/archive"
 
