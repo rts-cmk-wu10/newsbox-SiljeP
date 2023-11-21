@@ -1,7 +1,7 @@
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
-  if (!window.location.pathname.includes("index.html") && !window.location.pathname.includes("archive.html")) return // guard clause
+    if (!window.location.pathname.includes("index.html") && !window.location.pathname.includes("archive.html")) return // guard clause
 
     const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"
     const HEALTH_CONTAINER = document.querySelector(".health__articleContainer")
@@ -34,15 +34,15 @@ export default (function () {
                             ARTICLE.addEventListener("touchend", touchHandler)
 
                             ARTICLE.classList.add("health__article")
-                            ARTICLE.innerHTML = `<img class="health__articleImage" src="${object.multimedia[2].url}">
-                            
+                            ARTICLE.innerHTML = `<a class="health__articleURL" href="${object.url}" target="_blank"> 
+                            <img class="health__articleImage" src="${object.multimedia[2].url}">
+                            </a>
                             <div class="health__articleTextContainer">
-                            <a class="health__articleURL" href="${object.url}" target="_blank"> 
                      <h1 class="health__articleTitle">${object.title}</h1>
                      <p class="health__articleText">${object.abstract}</p>
-                   </a></div><button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}"  class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                   </div><button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}"  class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                   `
-                            
+
                             HEALTH_CONTAINER.append(ARTICLE)
                             console.log(object);
                         }

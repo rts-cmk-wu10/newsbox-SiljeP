@@ -29,7 +29,7 @@
 
     &TextContainer {
         display: flex;
-        width: 350px;
+        width: 320px;
         flex-direction: column;
         padding-right: 2em;
         justify-content: center;
@@ -65,6 +65,7 @@
     min-width: 100px;
     max-width: 100px;
     border: none;
+   
 
     &__icon {
         color: var(--button-icon);

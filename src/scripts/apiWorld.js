@@ -37,12 +37,13 @@ export default (function () {
                             ARTICLE.addEventListener("touchstart", touchHandler)
                             ARTICLE.addEventListener("touchend", touchHandler)
 
-                            ARTICLE.innerHTML = `<img class="world__articleImage" src="${object.multimedia[2].url}">
+                            ARTICLE.innerHTML = `<a class="health__articleURL" href="${object.url}" target="_blank">
+                            <img class="world__articleImage" src="${object.multimedia[2].url}">
+                            </a> 
                             <div class="world__articleTextContainer">  
-                            <a class="health__articleURL" href="${object.url}" target="_blank"> 
                       <h1 class="world__articleTitle">${object.title}</h1>
                        <p class="world__articleText">${object.abstract}</p>
-                     </a> </div><button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                     </div><button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                       `
 
                             WORLD_CONTAINER.append(ARTICLE)

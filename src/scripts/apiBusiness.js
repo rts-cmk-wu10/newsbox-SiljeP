@@ -35,12 +35,12 @@ export default (function () {
                             ARTICLE.addEventListener("touchend", touchHandler)
 
                             ARTICLE.classList.add("business__article")
-                            ARTICLE.innerHTML = `<img class="business__articleImage" src="${object.multimedia[2].url}">
+                            ARTICLE.innerHTML = ` <a class="health__articleURL" href="${object.url}" target="_blank">  
+                            <img class="business__articleImage" src="${object.multimedia[2].url}">
+                           </a>
                             <div class="business__articleTextContainer">
-                            <a class="health__articleURL" href="${object.url}" target="_blank"> 
                      <h1 class="business__articleTitle">${object.title}</h1>
                       <p class="business__articleText">${object.abstract}</p>
-                      </a>
                     </div>
                      <button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                     `
