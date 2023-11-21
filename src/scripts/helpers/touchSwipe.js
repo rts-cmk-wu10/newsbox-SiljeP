@@ -3,9 +3,9 @@ const ARTICLE = document.querySelector(".world__article")
 const WORLD_CONTAINER = document.querySelector(".world__articleContainer")
 const ARCHIVE = document.querySelectorAll(".archiveButton")
 
-
+let x
 export function touchHandler(event) {
-    let x
+    
     if (event.type === "touchstart") {
         x = event.changedTouches[0].clientX
     } else {
@@ -18,8 +18,6 @@ export function touchHandler(event) {
             event.currentTarget.style.transform = "translate(0px,0px)"
         }
     }
-
-
     x = null
 
 }

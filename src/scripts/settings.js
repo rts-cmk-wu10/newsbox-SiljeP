@@ -7,8 +7,6 @@ export default (function () {
     const BUSINESS_BUTTON = document.querySelector("#switchBusiness")
     const TRAVEL_BUTTON = document.querySelector("#switchTravel")
 
-
-
     //world
     //  If local storage doesn't have a key called worldShow it creates one and set's it to true
     if (!localStorage.getItem("worldShow")) {
@@ -105,9 +103,5 @@ export default (function () {
         }
 
     }
-
-
-
-
 
 })()
