@@ -72,3 +72,20 @@
         
     }
 }
+
+.deleteButton{
+    background-color: var(--delete-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    max-width: 100px;
+    border: none;
+   
+
+    &__icon {
+        color: var(--button-icon);
+        font-size: xx-large;
+        
+    }
+}

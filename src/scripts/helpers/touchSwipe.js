@@ -1,8 +1,3 @@
-
-const ARTICLE = document.querySelector(".world__article")
-const WORLD_CONTAINER = document.querySelector(".world__articleContainer")
-const ARCHIVE = document.querySelectorAll(".archiveButton")
-
 let x
 export function touchHandler(event) {
     

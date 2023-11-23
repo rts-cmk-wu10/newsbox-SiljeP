@@ -8,4 +8,5 @@ import "./scripts/darkmode"
 import "./scripts/settings"
 import "./scripts/newsboxCategories"
 import "./scripts/archive"
+import "./scripts/printlistBusiness"
 
