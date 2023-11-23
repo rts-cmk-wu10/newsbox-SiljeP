@@ -1,5 +1,6 @@
 export default (function () {
-    if (!window.location.pathname.includes("index.html")) return // guard clause
+    if (!window.location.pathname.includes("index") && !window.location.pathname.includes("/")) return // guard clause
+
 
     const WORLD = document.querySelector(".world")
     const HEALTH = document.querySelector(".health")

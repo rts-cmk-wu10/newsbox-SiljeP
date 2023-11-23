@@ -2,7 +2,7 @@ import archiveClick from "./helpers/clickHandler"
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
-    if (!window.location.pathname.includes("index.html")) return // guard clause
+    if (!window.location.pathname.includes("index") && !window.location.pathname.includes("/")) return // guard clause
 
     const KEY = "X3CCZda4H2e4bv2yUieN2AI5m0U7njTV"
     const TRAVEL_CONTAINER = document.querySelector(".travel__articleContainer")

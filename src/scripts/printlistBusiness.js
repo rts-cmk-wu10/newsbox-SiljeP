@@ -1,8 +1,10 @@
 import getJSONfromLocalStorage from "./helpers/getJSONfromLocalstorage"
 import { touchHandler } from "./helpers/touchSwipe"
+import deleteClick from "./helpers/deleteClick"
 
 export default (function () {
-    if (!window.location.pathname.includes("archive.html")) return // guard clause
+    if (!window.location.pathname.includes("archive") && !window.location.pathname.includes("/")) return // guard clause
+
 
     const DATA = getJSONfromLocalStorage("archive")
     const BUSINESS_CONTAINER = document.querySelector(".business__articleContainer")
@@ -36,13 +38,13 @@ export default (function () {
          <h1 class="business__articleTitle">${item.title}</h1>
           <p class="business__articleText">${item.abstract}</p>
         </div>
-         <button class="deleteButton"><i class="deleteButton__icon fa-regular fa-trash-can"></i></button>
+         <button data-title="${item.title}" data-category="business" class="deleteButton"><i class="deleteButton__icon fa-regular fa-trash-can"></i></button>
         `
             const DELETE_BUTTON = ARTICLE.querySelector(".deleteButton")
-            // DELETE_BUTTON.addEventListener("touchstart", deleteClick)
+            DELETE_BUTTON.addEventListener("touchstart", deleteClick)
             BUSINESS_CONTAINER.append(ARTICLE)
 
         })
-    }
+    } 
 
 })()

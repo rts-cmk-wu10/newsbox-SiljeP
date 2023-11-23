@@ -1,5 +1,5 @@
 export default (function () {
-    if (!window.location.pathname.includes("settings.html")) return // guard clause
+    if (!window.location.pathname.includes("settings")) return // guard clause
 
     const WORLD__BUTTON = document.querySelector("#switchWorld")
     const HEALTH_BUTTON = document.querySelector("#switchHealth")

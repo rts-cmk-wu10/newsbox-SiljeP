@@ -2,7 +2,7 @@ import getJSONfromLocalStorage from "./helpers/getJSONfromLocalstorage"
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
-    if (!window.location.pathname.includes("archive.html")) return // guard clause
+    if (!window.location.pathname.includes("archive") && !window.location.pathname.includes("/")) return // guard clause
 
     const DATA = getJSONfromLocalStorage("archive")
     const SCIENCE_CONTAINER = document.querySelector(".science__articleContainer")
