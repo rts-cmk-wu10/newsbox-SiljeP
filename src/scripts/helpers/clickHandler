@@ -1,3 +1,4 @@
+import printlist from "../printlist";
 import getJSONfromLocalStorage from "./getJSONfromLocalstorage";
 import saveJSONtoLocalStorage from "./saveJSONtoLocalstorage";
 import updateJSONinLocalStorage from "./updateJSONinLocalStorage";
@@ -7,19 +8,21 @@ import updateJSONinLocalStorage from "./updateJSONinLocalStorage";
 
 //archiveClick is declared in every API js.
  export default function archiveClick(event) {
-     console.log(event.currentTarget.dataset);
 
 //     printList()
 //  localStorage.setItem("archive", event.currentTarget.dataset)
     const DATA = getJSONfromLocalStorage("archive")
-    console.log(DATA);
+    
     DATA[event.currentTarget.dataset.category].push({
         imageURL: event.currentTarget.dataset.imageURL,
         title: event.currentTarget.dataset.title,
         abstract: event.currentTarget.dataset.abstract,
-        siteURL: event.currentTarget.dataset.siteURL
+        siteURL: event.currentTarget.dataset.siteURL,
+        category: event.currentTarget.dataset.category
     })
     
+    saveJSONtoLocalStorage("archive", DATA)
+    printlist()
  }
 
 
