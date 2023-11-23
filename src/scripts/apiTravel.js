@@ -1,3 +1,4 @@
+import archiveClick from "./helpers/clickHandler"
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
@@ -42,9 +43,11 @@ export default (function () {
                      <h1 class="travel__articleTitle">${object.title}</h1>
                       <p class="travel__articleText">${object.abstract}</p>
                     </div>
-                     <button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                     <button data-title="${object.title}" data-category="travel" data-imageURL="${object.multimedia[2].url}" data-abstract="${object.abstract}" data-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                      `
 
+                            const ARCHIVE_BUTTON = ARTICLE.querySelector(".archiveButton")
+                            ARCHIVE_BUTTON.addEventListener("touchstart", archiveClick)
                             TRAVEL_CONTAINER.append(ARTICLE)
                         }
                     })

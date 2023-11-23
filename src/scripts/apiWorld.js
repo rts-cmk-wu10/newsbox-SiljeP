@@ -1,7 +1,7 @@
+import archiveClick from "./helpers/clickHandler"
 import { touchHandler } from "./helpers/touchSwipe"
 
 export default (function () {
-    console.log(window.location.pathname);
     if (!window.location.pathname.includes("index.html")) return // guard clause
 
 
@@ -43,10 +43,13 @@ export default (function () {
                             <div class="world__articleTextContainer">  
                       <h1 class="world__articleTitle">${object.title}</h1>
                        <p class="world__articleText">${object.abstract}</p>
-                     </div><button data-title="${object.title}" data-category="business" date-imageURL="${object.multimedia[2].url}" date-abstract="${object.abstract}" date-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
+                     </div><button data-title="${object.title}" data-category="world" data-imageURL="${object.multimedia[2].url}" data-abstract="${object.abstract}" data-siteURL="${object.url}" class="archiveButton"><i class="archiveButton__icon fa-regular fa-bookmark"></i></button>
                       `
 
                             WORLD_CONTAINER.append(ARTICLE)
+
+                            const ARCHIVE_BUTTON = ARTICLE.querySelector(".archiveButton")
+                            ARCHIVE_BUTTON.addEventListener("touchstart", archiveClick)
                         }
                     })
                 })

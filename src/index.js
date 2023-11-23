@@ -9,4 +9,7 @@ import "./scripts/settings"
 import "./scripts/newsboxCategories"
 import "./scripts/archive"
 import "./scripts/printlistBusiness"
-
+import "./scripts/printlistTravel"
+import "./scripts/printlistHealth"
+import "./scripts/printlistScience"
+import "./scripts/printlistWorld"
